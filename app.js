@@ -6,7 +6,7 @@ const port = process.env.PORT || 3001;
 const Pool = require('pg').Pool
 const pool = new Pool({
   user: 'maharnetuserdb_user',
-  host: 'postgres://maharnetuserdb_user:V7DDUdymKpgYkvtyAVFU5TSuA3aenoCa@dpg-ce9btnmn6mpgqu8ltjf0-a/maharnetuserdb',
+  host: 'dpg-ce9btnmn6mpgqu8ltjf0-a',
   database: 'maharnetuserdb',
   password: 'V7DDUdymKpgYkvtyAVFU5TSuA3aenoCa',
   port: 5432,
