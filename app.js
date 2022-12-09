@@ -2,6 +2,17 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3001;
 
+
+const Pool = require('pg').Pool
+const pool = new Pool({
+  user: 'maharnetuserdb_user',
+  host: 'postgres://maharnetuserdb_user:V7DDUdymKpgYkvtyAVFU5TSuA3aenoCa@dpg-ce9btnmn6mpgqu8ltjf0-a/maharnetuserdb',
+  database: 'maharnetuserdb',
+  password: 'V7DDUdymKpgYkvtyAVFU5TSuA3aenoCa',
+  port: 5432,
+})
+
+
 app.get("/", (req, res) => res.type('html').send(html));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
